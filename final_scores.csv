@@ -1,0 +1,42 @@
+,recall_train,recall_test,f1_train,f1_test,accuracy_train,accuracy_test,roc_auc,pr_auc,params
+lr,0.7660738714090287,0.695049504950495,0.6864848299111247,0.6536312849162011,0.71630615640599,0.6905158069883528,0.6911402474537267,0.556876173333875,"LogisticRegression(C=1000000000000.0, class_weight='balanced', random_state=42)"
+rf,1.0,0.5891783567134269,1.0,0.6405228758169934,1.0,0.732360097323601,0.7094393145964955,0.5796703088791927,RandomForestClassifier(random_state=42)
+dtc,1.0,0.5791583166332666,1.0,0.5958762886597938,1.0,0.6820762368207623,0.6656009566817559,0.5256809588305813,DecisionTreeClassifier(random_state=42)
+xgb,0.9327505043712172,0.6092184368737475,0.9215946843853821,0.6413502109704642,0.9361644576683797,0.7242497972424979,0.7058353764750209,0.570628367861284,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              feature_weights=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=None, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=None,
+              max_leaves=None, min_child_weight=None, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=None,
+              n_jobs=None, num_parallel_tree=None, ...)"
+knn,0.710827168796234,0.5771543086172345,0.7153976311336717,0.5765765765765766,0.7725182580470652,0.656934306569343,0.6441629853712876,0.5035682134748003,KNeighborsClassifier()
+rf_best,0.7370544720914594,0.7054108216432866,0.7248677248677249,0.6935960591133005,0.7749526643224236,0.7477696674776967,0.7409887895682373,0.6004318941736809,"RandomForestClassifier(class_weight='balanced', max_depth=25,
+                       min_samples_leaf=10, n_estimators=200, random_state=42)"
+xgb_best,0.8036314727639543,0.7975951903807615,0.7091988130563798,0.6964129483814523,0.7349202055720855,0.7185725871857259,0.7312226633102719,0.5748377664892382,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              feature_weights=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.2, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=1,
+              max_leaves=None, min_child_weight=7, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=None,
+              n_jobs=None, num_parallel_tree=None, ...)"
+dtc_best,0.8069939475453934,0.7875751503006012,0.7109004739336493,0.6870629370629371,0.7360021639166892,0.7096512570965126,0.7221254498097012,0.565840551507965,"DecisionTreeClassifier(class_weight='balanced', max_depth=5,
+                       min_samples_leaf=15, random_state=42)"
+final_model,0.8036314727639543,0.7975951903807615,0.7091988130563798,0.6964129483814523,0.7349202055720855,0.7185725871857259,0.7312226633102719,0.5748377664892382,"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              feature_weights=None, gamma=None, grow_policy=None,
+              importance_type=None, interaction_constraints=None,
+              learning_rate=0.2, max_bin=None, max_cat_threshold=None,
+              max_cat_to_onehot=None, max_delta_step=None, max_depth=1,
+              max_leaves=None, min_child_weight=7, missing=nan,
+              monotone_constraints=None, multi_strategy=None, n_estimators=None,
+              n_jobs=None, num_parallel_tree=None, ...)"
